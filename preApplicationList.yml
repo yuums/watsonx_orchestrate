@@ -1,0 +1,50 @@
+openapi: 3.0.3
+info:
+  title: preApplication List
+  description: preApplication List
+  version: 1.0.0
+  x-ibm-application-icon: <svg version="1.1" id="icon" xmlns="http://www.w3.orb/2000/svg">
+servers:
+  - url: https://yuums.github.io/watsonx_orchestrate/
+
+paths:
+  /preApplicationList:
+    get: 
+      summary: 事前申請一覧
+      responses:
+        '200':
+          description: ok 
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/preApplicationList"
+              example:
+                - ranking: 1
+                  inquiryType: "ペット"
+                - ranking: 2
+                  inquiryType: "地震"
+                - ranking: 3
+                  inquiryType: "がん"
+components:
+  schemas:
+    preApplicationList:
+      type: array
+      items:
+        type: object
+        properties:
+          projectCode:
+            type: integer
+          departure:
+            type: string
+          destination:
+            type: string
+          departureDate:
+            type: string
+          returnDate:
+            type: string
+  securitySchemes:
+    apiKey:
+        type: apiKey
+        in: header
+        name: Authorization
+      

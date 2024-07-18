@@ -1,0 +1,46 @@
+openapi: 3.0.3
+info:
+  title: Expenses List
+  description: Expenses List
+  version: 1.0.0
+  x-ibm-application-icon: <svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg"></svg>
+servers:
+  - url: https://yuums.github.io/watsonx_orchestrate/
+
+paths:
+  /expensesList:
+    get: 
+      summary: 経費一覧
+      responses:
+        '200':
+          description: ok 
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExpenseList"
+              example:
+                - expenseType: "ホテル"
+                  amount: 10000
+                  date: "2024-07-25"
+                - expenseType: "新幹線"
+                  amount: 12000
+                  date: "2024-07-25"
+
+components:
+  schemas:
+    ExpenseList:
+      type: array
+      items:
+        type: object
+        properties:
+          expenseType:
+            type: string
+          amount:
+            type: integer
+          date:
+            type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
