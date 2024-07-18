@@ -1,0 +1,12 @@
+[
+	{
+	  "expenseType": "ホテル" ,
+	  "amount": 10000,
+	  "date": 2024-07-25
+	},
+	{
+	  "expenseType": "新幹線" ,
+	  "amount": 12000,
+	  "date": 2024-07-25
+	}
+  ]
