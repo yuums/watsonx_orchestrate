@@ -1,0 +1,23 @@
+[
+	{
+	  "projectCode": 111,
+	  "departure":"東京",
+	  "destination": "大阪",
+	  "departureDate": 2024-07-25,
+	  "returnDate": 2024-07-27
+	},
+	{
+	  "projectCode": 222,
+	  "departure":"東京",
+	  "destination": "名古屋",
+	  "departureDate": 2024-08-01,
+	  "returnDate": 2024-08-02
+	},
+	{
+	  "projectCode": 333,
+	  "departure":"東京",
+	  "destination": "福岡",
+	  "departureDate": 2024-07-21,
+	  "returnDate": 2024-07-22
+	}
+  ]
