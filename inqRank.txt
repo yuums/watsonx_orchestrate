@@ -1,0 +1,14 @@
+[
+  {
+    "ranking": 1,
+    "inquiryType": "ペット"
+  },
+  {
+    "ranking": 2,
+    "inquiryType": "地震"
+  },
+  {
+    "ranking": 3,
+    "inquiryType": "火災"
+  }
+]
