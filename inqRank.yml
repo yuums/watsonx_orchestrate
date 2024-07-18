@@ -5,7 +5,7 @@ info:
   version: 1.0.0
   x-ibm-application-icon: <svg version="1.1" id="icon" xmlns="http://www.w3.orb/2000/svg">
 servers:
-  - url: https://ayakons.github.io/wxo_sandbox/
+  - url: https://yuums.github.io/watsonx_orchestrate/
 
 paths:
   /inqRank:
