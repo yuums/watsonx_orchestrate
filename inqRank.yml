@@ -37,8 +37,9 @@ components:
           inquiryType:
             type: string
   securitySchemes:
-    basicAuth:
-      type: http
-      scheme: basic
+    apiKey:
+        type: apiKey
+        in: header
+        name: Authorization
       
 
